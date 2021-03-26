@@ -1,0 +1,20 @@
+{
+  "initiators": [
+    {
+        "type": "cron",
+        "params": {
+            "schedule": "CRON_TZ=UTC */10 * * *"
+        }
+    }
+  ],  
+  "tasks": [
+    { "type": "tusdRatioCalculator" },
+    { "type": "copy",
+      "params": {"copyPath": ["data", "result"]}},
+    { "type": "multiply",
+      "params": {"times": 10000 }},
+    { "type": "ethuint256" },
+    { "type": "ethtx" }
+  ],
+  "endAt": "2021-04-18T12:00:00Z"
+}
