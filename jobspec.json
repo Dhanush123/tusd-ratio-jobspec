@@ -1,10 +1,7 @@
 {
   "initiators": [
     {
-        "type": "cron",
-        "params": {
-            "schedule": "CRON_TZ=UTC */10 * * *"
-        }
+      "type": "runlog"
     }
   ],  
   "tasks": [
