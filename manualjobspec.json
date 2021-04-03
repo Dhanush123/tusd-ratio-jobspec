@@ -7,7 +7,7 @@
   "tasks": [
     { "type": "tusdRatioCalculator" },
     { "type": "copy",
-      "params": {"copyPath": ["data", "result"]}},
+      "params": {"copyPath":"result"}},
     { "type": "multiply",
       "params": {"times": 10000 }},
     { "type": "ethuint256" },
