@@ -6,3 +6,6 @@ observationSource = """
     ds          [type="http" method=GET url=""]
     ds_parse    [type="jsonparse" path="result"]
     ds_multiply [type="multiply" times=10000]
+
+    ds -> ds_parse -> ds_multiply
+"""
