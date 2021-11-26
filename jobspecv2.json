@@ -1,0 +1,7 @@
+type = "directrequest"
+schemaVersion = 1
+contractAddress = ""
+observationSource = """
+    ds          [type="http" method=GET url=""]
+    ds_parse    [type="jsonparse" path="result"]
+    ds_multiply [type="multiply" times=10000]
