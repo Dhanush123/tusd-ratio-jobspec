@@ -1,5 +1,6 @@
 type = "directrequest"
 schemaVersion = 1
+name = "tusd adapter job spec"
 contractAddress = ""
 observationSource = """
     ds          [type="http" method=GET url=""]
